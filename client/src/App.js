@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import { useSDK } from "@metamask/sdk-react";
 import PatientRecordsABI from "./contract/PatientRecords.json";
 import Web3 from "web3";
+import TumorForm from "./pages/TumorForm";
 
 const App = () => {
   const [web3, setWeb3] = useState(null);
@@ -51,6 +52,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tracker" element={<Tracker />} />
+        <Route path="/tumor" element={<TumorForm />} />
       </Routes>
     </>
   );
